@@ -18,6 +18,7 @@ In our media and campaign materials, who should we consider as our main opponent
 - @nsdap: The NSDAP alone.
 - @kpd: The KPD.
 - @bourgeois: The bourgeois parties - the Center and DVP.
+- @traitors: The national traitor parties - the Center, DVP, DNVP and KPD.
 - @everyone: The enemies of Braun are all enemies of the SDP.
 - @easy_discard
 
@@ -50,6 +51,22 @@ view-if: braundictator = 0
 on-arrival: enemies = "bourgeois parties"; left_strength += 8; left_dissent -= 5; dvp_relation -= 5; z_relation -= 5; kpd_relation += 5; dnvp_relation += 5; nsdap_relation += 5; reformist_dissent += 8; workers_z -= 3; coalition_dissent += 1
 
 Our anti-bourgeois rhetoric is popular among the left, but may make it harder to build the coalitions that are necessary for government in the future.
+
+@traitors
+view-if: braundictator = 0
+on-arrival: enemies = "national traitor parties"; left_dissent += 8; dvp_relation -= 5; z_relation -= 5; kpd_relation -= 5; dnvp_relation -= 5; nsdap_relation += 15; workers_z -= 3; workers_kpd -= 3; workers_dnvp -= 3; coalition_dissent += 1; pacifism -= 10
+
+KPD, YOU FUCKING TRAITORS, YOU REVOLTED AGAINST OUR GOVERNMENT FOR BEING CONSITUTIONAL, FOR REFORMING INSTEAD OF VASSALIZING TO THE USSR, YOU ALWAYS OPPOSE OUR POLICIES AND GROW LIKE CANCER
+
+DDP, ALWAYS WANTING LIBERALISM, NOT JOINING THE PROGRESSIVES IN THE SPD DUE TO "FREE MARKET PRINCIPLES", COLLABORATING WITH THE MONARCHIST VERMIN.
+
+DVP, MONARCHIST VERMIN, PRETENDING TO BE WEIMAR, YOUR LARP WILL END, JUST LIKE YOUR NATIONAL TRAITOR LIBERALISM.
+
+ZENTRUM, YOU CLAIM TO SUPPORT CATHOLICS, YET YOU COLLABORATE WITH THE DNVP, WHO HATES CATHOLICS, YOU OPPORTUNISTS ALWAYS LEECH OFF THEIR SUPPORT
+
+DNVP, SUPPORTING THE "REVERSAL OF VERSAILLES", YET YOU SUPPORT THE PEOPLE WHO PUT US THROUGH THAT HUMILIATION, THE JUNKERS AND KAISER HAVE DRAGGED US TO OUR DEFEAT, TO OUR HUMILIATION, TO THE DEPTHS OF VERAILLES.
+
+ALL OF THESE PARTIES WILL BE CONDEMNED LIKE THE RATS THEY ARE.
 
 @everyone
 view-if: braundictator = 1
