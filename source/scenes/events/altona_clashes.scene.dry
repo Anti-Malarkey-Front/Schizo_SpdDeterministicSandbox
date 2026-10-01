@@ -13,7 +13,7 @@ The Nazi SA is planning a march through Altona, a working-class neighborhood of 
 - @allow_police: Allow the march, with a heavy police presence.
 - @allow_no_police: Allow the march without a police presence.
 - @join_march: Join in on the March.
-- @join_march: Hijack the March and make it about ourselves.
+- @hijack_nazi: Hijack the March and make it about ourselves.
 
 @ban_march
 choose-if: judicial_reform >= 2
