@@ -15,6 +15,7 @@ Many non-communists are afraid of the possibility of another violent uprising, a
 - @ban: Ban the demonstrations.
 - @allow_police: Allow the demonstrations to proceed, but maintain a heavy police presence.
 - @allow: Allow the demonstrations to proceed.
+- @hijack: Hijack the demonstrations and make them about ourselves.
 - @join: Join in the demonstrations ourselves.
 
 @ban
@@ -44,6 +45,12 @@ If the KPD continues to act illegally, they must suffer the consequences. Thus, 
 @no_fault
 
 This position gains us no allies, and does not alienate anyone any further.
+
+@hijack
+on-arrival: workers_spd += 15; unemployed_spd += 15; kpd_relation -= 7; z_relation -= 3; dvp_relation -= 3; ddp_relation -= 3; dnvp_relation -= 3; nsdap_relation -= 3; coalition_dissent += 1
+
+The demonstration proceeds peacefully, with a minimal police presence. We sucessfully make the entire event all about our own party, to the dismay of literally all opposition parties. The KPD is outraged, and our coalition is cold towards this act of stroking our ego. However le good buffs.
+
 
 
 @allow_police
