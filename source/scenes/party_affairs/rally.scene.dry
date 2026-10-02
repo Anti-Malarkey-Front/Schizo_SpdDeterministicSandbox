@@ -74,6 +74,7 @@ Mass rallies are a common feature of social democratic life, especially in the l
 
 - @class_struggle: The class struggle of the proletariat against the bourgeoisie.
 - @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
+- @revanchism: The Restoration of German Global Hegemony
 - @democracy: Expanding our nascent democracy and defending it against dictatorship and fascism.
 - @pacifism: Opposing war, nationalism, and militarism at all costs.
 - @wtb: Support the WTB plan!
@@ -85,13 +86,18 @@ on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent) if lef
 
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
 
+@revanchism
+on-arrival: pacifism -= 5; nationalism += 8*(1 - dissent); workers_spd += 8*(1-dissent); unemployed_spd += 9*(1-dissent); rural_spd += 7*(1-dissent); catholics_spd -= 5; reformist_strength -= 3; labor_strength += 4; reformist_dissent += 3; labor_dissent -= 3; z_relation -= 3; kpd_relation -= 3; ddp_relation -= 3; dvp_relation -= 3; dnvp_relation += 3; nsdap_relation += 5;
+
+Our message of German Revanchism has appealed to our voterbase, while alienating potential coalition allies. Don't worry tho, we have the far-right.
+
 @welfare
 on-arrival: workers_spd += 3*(1-dissent); workers_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 4*(1-dissent) if welfare > 1; reformist_strength += 3; labor_strength += 4; reformist_dissent -= 3; labor_dissent -= 3;
 
 The reformist message appeals to the organized workers, whose benefits are the accomplishments of social democracy. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
 
 @democracy
-on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); workers_spd += 4*(1-dissent) if democratization >= 3; unemployed_spd += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; new_middle_spd += 4*(1-dissent) if democratization >= 3 
+on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); dnvp_relation -= 5; nsdap_relation -= 3; workers_spd += 4*(1-dissent) if democratization >= 3; unemployed_spd += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; new_middle_spd += 4*(1-dissent) if democratization >= 3 
 
 Our speakers defend the republican system and rail against the monarchists and authoritarians who threaten it.
 
